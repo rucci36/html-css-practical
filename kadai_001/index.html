@@ -4,7 +4,8 @@
     <title>MyProfile</title>
     <meta charset="utf-8">
     <meta name="description" content="自己紹介サイト">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -12,15 +13,15 @@
 
 <body>
     <header>
+        <div class="top">
+            <h1>
+                <a href="index.html">MyProfile</a>
+            </h1>
+        </div>
         <nav>
-            <ul>
-            <div>
-            <a href="index.html"><h1>MyProfile</h1></a>
-            </div>
-            <div class="menu">
+            <ul class="menu">
             <a href="index.html#About" id="about"><h2>About</h2></a>
             <a href="index.html#Works" id="works"><h2>Works</h2></a>
-            </div>
             </ul>
         </nav>
     </header>
@@ -33,9 +34,10 @@
 
             <section class="about">
                 <h2 id="About">About</h2>
-                <img class="profile" src="images/about.png" alt="プロフィール写真">
-                <div class="main">
-                    <h2>Kazuki Asahina</h2>
+                <div class="main-first">
+                <img src="images/about.png" alt="プロフィール写真" class="picture">
+                <div class="inner">
+                    <p>Kazuki Asahina</p>
                         <ul>
                         <li>25歳 長野県佐久市出身</li>
                         <li>ソフトウェア業界でマーケティングに従事</li>
@@ -43,11 +45,12 @@
                         <li>自然を撮影するのが好きで、海や山によく行く</li>
                     </ul>
                 </div>
+                </div>
             </section>
 
-            <section>
+            <section class="works">
                 <h2 id="Works">Works</h2>
-                <div class="section">
+                <div class="main-second">
                 <div class="item">
                     <img src="images/works1.png" alt="日本海">
                     <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
@@ -64,11 +67,12 @@
                 </div>
                 </div>
             </section>
+        </article>
+            </main>
 
             <footer>
                 <p>&copy; MyProfile. All rights reserved.</p>
             </footer>
-        </article>
-    </main>
+
 </body>
 </html>
