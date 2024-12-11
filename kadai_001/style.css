@@ -52,8 +52,8 @@ h1 > a {
 }
 
 img {
-    width: 100%;
     margin: 0 auto;
+    width: 100%;
 }
 
 .about > h2 {
@@ -117,6 +117,11 @@ footer {
 /* スマホ用　*/
 @media screen and (max-width: 767px) {
 
+    html {
+        width: 100%;
+        align-items: center;
+    }
+
     header {
         display: flex;
         width: 100%;
@@ -128,11 +133,12 @@ footer {
     }
 
     .menu {
+        text-align: right;
         font-size: 21px;
     }
 
     .top {
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: 20px;
     }
 
@@ -141,40 +147,54 @@ footer {
         margin: 20px auto;
     }
 
-    #works {
-        margin-left: 5px;
+    #about {
+        margin-left: 20px;
     }
 
-    h2 {
-        margin: 20px 20px;
+    #works {
+        margin-left: 15px;
+    }
+
+    .about > #About {
+        margin-top: 20px;
+    }
+
+    .main-first {
+        width: 296px;
+        height: 203px;
+        margin-top: 60px;
     }
 
     .main-first > img {
-        margin: 0 60px;
+        align-items: center;
+    }
+
+    .about {
+        width: 100%;
         align-items: center;
     }
 
     .inner {
         float: none;
         width: 100%;
-        margin: 0 auto;
     }
 
-    .works {
-        margin: 180px;
+    .works > #Works {
+        margin-top: 380px;
     }
 
     .main-second {
         width: 355px;
-        height: 260px;
-        align-items: center;
+        height: 320px;
+        margin: 0 auto;
     }
 
     .item {
         margin: 60px auto;
     }
 
-    footer {
-        margin-top: 150px;
+    footer > p {
+        margin-top: 630px;
+        text-align: center;
     }
 }
